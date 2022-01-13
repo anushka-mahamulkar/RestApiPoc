@@ -1,10 +1,10 @@
-package edu.anushka.spring.RestApiPoc;
+package edu.anushka.spring.poc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestApiPocApplicationTests {
+class MainAppTests {
 
 	@Test
 	void contextLoads() {

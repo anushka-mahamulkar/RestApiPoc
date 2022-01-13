@@ -1,12 +1,27 @@
-package edu.anushka.spring.RestApiPoc;
+package edu.anushka.spring.poc;
 
 //import lombok.Data;
+import javax.persistence.*;
 
+@Entity
+// @Table(name = "employee")
 public class Employee {
+
+ @Id
+ // @GeneratedValue(strategy = GenerationType.AUTO)
+ @Column(name = "id", nullable = false)
  private Integer id;
+
+ // @Column(name = "first_Name", nullable = false)
  private String firstName;
+
+// @Column(name = "last_Name", nullable = false)
  private String lastName;
+
+// @Column(name = "salary", nullable = true)
  private Integer salary;
+
+ private String dept;
 
  public Integer getId() {
   return id;
@@ -41,5 +56,11 @@ public class Employee {
  }
 
 
+ public String getDept() {
+  return dept;
+ }
 
+ public void setDept(String dept) {
+  this.dept = dept;
+ }
 }
